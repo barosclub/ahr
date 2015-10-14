@@ -105,7 +105,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Logs out the current user.
+     * Logs out the current user55.
      *
      * @return mixed
      */
