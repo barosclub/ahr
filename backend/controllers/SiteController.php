@@ -53,13 +53,16 @@ class SiteController extends Controller
         ];
     }
 
-    public function actionIndex()
+     public function actionIndex()
     {
-        return $this->render('index');
+          if (Yii::$app->user->isGuest)
+            $this->redirect(Yii::$app->urlManager->createUrl('site/login'));
+        else
+            return $this->render('index');
     }
 
     public function actionLogin()
-    {
+    {        $this->layout='Layoutlogin';
         if (!\Yii::$app->user->isGuest) {
             return $this->goHome();
         }

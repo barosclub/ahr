@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-namespace frontend\assets;
+namespace backend\assets;
 use yii\web\AssetBundle;
 /**
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -14,13 +14,13 @@ class AdminLteAsset extends AssetBundle {
     public $sourcePath = '@themes/AdminLte';
     public $baseUrl = '@web';
     public $css = [
-        'dist/css/AdminLTE.min.css',
-         'bootstrap/css/bootstrap.min.css',
+       'dist/css/AdminLTE.min.css',
+        'bootstrap/css/bootstrap.min.css',
         'dist/css/font-awesome/css/font-awesome.min.css',
        //ซ้ำกับ bootstrap'dist/css/ionic/css/ionic.min.css',
         'dist/css/skins/_all-skins.min.css',
         //'plugins/datepicker/datepicker3.css',
-        'plugins/iCheck/square/blue.css',
+        //'plugins/iCheck/square/blue.css',
        //'plugins/daterangepicker/daterangepicker-bs3.css',
        // 'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
         //'plugins/jvectormap/jquery-jvectormap-1.2.2.css',

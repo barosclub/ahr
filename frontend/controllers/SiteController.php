@@ -42,9 +42,9 @@ class SiteController extends Controller
             ],
             'verbs' => [
                 'class' => VerbFilter::className(),
-                'actions' => [
+               /* 'actions' => [
                     'logout' => ['post'],
-                ],
+                ],ภ้าเปิดแล้วจะสร้างลิงค์ logout ไม่ได้*/
             ],
         ];
     }
