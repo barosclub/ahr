@@ -7,11 +7,12 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AdminLteAsset;
+//use frontend\assets\AdminLteAsset;
+use frontend\assets\MaterialAsset;
 use common\widgets\Alert;
 use yii\helpers\Url;
-
-AdminLteAsset::register($this);
+MaterialAsset::register($this);
+//AdminLteAsset::register($this);
 //AppAsset::register($this);
  $this->title ='Airhos-Project'; ?>
 

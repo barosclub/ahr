@@ -83,8 +83,7 @@ use kartik\date\DatePicker;
     ])
     ?>
     </div>
-    <div class="col-xs-2 col-sm-2 col-md-2"> <?= $form->field($model, 'sex')
-            ->dropDownList(ArrayHelper::map(Sex::find()->all(),'id','name'), ['prompt' => '<--ระบุ-->']) ?>
+    <div class="col-xs-2 col-sm-2 col-md-2"> 
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3">
         <div class="input-group"><?= $form->field($model, 'birth_date')
