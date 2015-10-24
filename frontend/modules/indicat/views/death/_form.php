@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\modules\indicat\models\Death */
+/* @var $model common\models\death */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -85,6 +85,26 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'update_datetime')->textInput() ?>
 
     <?= $form->field($model, 'staff')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'age')->textInput() ?>
+
+    <?= $form->field($model, 'sex')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'addre')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'death_out_place')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'send_by_id')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'cpr')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'ward')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'symptoms_refer')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'death_af48hr')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'case_refer')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\modules\indicat\models\Death */
+/* @var $model common\models\death */
 
 $this->title = $model->death_id;
 $this->params['breadcrumbs'][] = ['label' => 'Deaths', 'url' => ['index']];
@@ -65,6 +65,16 @@ $this->params['breadcrumbs'][] = $this->title;
             'death_preg_42_day',
             'update_datetime',
             'staff',
+            'age',
+            'sex',
+            'addre',
+            'death_out_place',
+            'send_by_id',
+            'cpr',
+            'ward',
+            'symptoms_refer',
+            'death_af48hr',
+            'case_refer',
         ],
     ]) ?>
 

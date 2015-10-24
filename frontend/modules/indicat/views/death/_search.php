@@ -89,6 +89,26 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'staff') ?>
 
+    <?php // echo $form->field($model, 'age') ?>
+
+    <?php // echo $form->field($model, 'sex') ?>
+
+    <?php // echo $form->field($model, 'addre') ?>
+
+    <?php // echo $form->field($model, 'death_out_place') ?>
+
+    <?php // echo $form->field($model, 'send_by_id') ?>
+
+    <?php // echo $form->field($model, 'cpr') ?>
+
+    <?php // echo $form->field($model, 'ward') ?>
+
+    <?php // echo $form->field($model, 'symptoms_refer') ?>
+
+    <?php // echo $form->field($model, 'death_af48hr') ?>
+
+    <?php // echo $form->field($model, 'case_refer') ?>
+
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
         <?= Html::resetButton('Reset', ['class' => 'btn btn-default']) ?>

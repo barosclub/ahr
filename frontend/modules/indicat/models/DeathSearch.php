@@ -5,12 +5,12 @@ namespace frontend\modules\indicat\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\modules\indicat\models\Death;
+use common\models\death;
 
 /**
- * DeathSearch represents the model behind the search form about `frontend\modules\indicat\models\Death`.
+ * DeathSearch represents the model behind the search form about `common\models\death`.
  */
-class DeathSearch extends Death
+class DeathSearch extends death
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class DeathSearch extends Death
     public function rules()
     {
         return [
-            [['death_id', 'wpreg', 'death_cert_id', 'death_source', 'newborn_death_cause_id'], 'integer'],
-            [['hn', 'cid', 'hcode', 'death_date', 'death_diag_1', 'death_diag_2', 'death_diag_3', 'death_diag_4', 'death_diag_other', 'death_cause', 'death_place', 'last_update', 'last_pttype', 'an', 'nopreg', 'odisease', 'death_time', 'death_diag_date_1', 'death_diag_date_2', 'death_diag_date_3', 'death_diag_date_4', 'death_cause_text', 'death_cert_date', 'death_cert_doctor', 'death_number', 'hos_guid', 'autopsy_perform', 'no_detail', 'death_hospcode', 'death_preg_42_day', 'update_datetime', 'staff'], 'safe'],
+            [['death_id', 'wpreg', 'death_cert_id', 'death_source', 'newborn_death_cause_id', 'age'], 'integer'],
+            [['hn', 'cid', 'hcode', 'death_date', 'death_diag_1', 'death_diag_2', 'death_diag_3', 'death_diag_4', 'death_diag_other', 'death_cause', 'death_place', 'last_update', 'last_pttype', 'an', 'nopreg', 'odisease', 'death_time', 'death_diag_date_1', 'death_diag_date_2', 'death_diag_date_3', 'death_diag_date_4', 'death_cause_text', 'death_cert_date', 'death_cert_doctor', 'death_number', 'hos_guid', 'autopsy_perform', 'no_detail', 'death_hospcode', 'death_preg_42_day', 'update_datetime', 'staff', 'sex', 'addre', 'death_out_place', 'send_by_id', 'cpr', 'ward', 'symptoms_refer', 'death_af48hr', 'case_refer'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class DeathSearch extends Death
      */
     public function search($params)
     {
-        $query = Death::find();
+        $query = death::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -70,6 +70,7 @@ class DeathSearch extends Death
             'death_source' => $this->death_source,
             'newborn_death_cause_id' => $this->newborn_death_cause_id,
             'update_datetime' => $this->update_datetime,
+            'age' => $this->age,
         ]);
 
         $query->andFilterWhere(['like', 'hn', $this->hn])
@@ -94,7 +95,16 @@ class DeathSearch extends Death
             ->andFilterWhere(['like', 'no_detail', $this->no_detail])
             ->andFilterWhere(['like', 'death_hospcode', $this->death_hospcode])
             ->andFilterWhere(['like', 'death_preg_42_day', $this->death_preg_42_day])
-            ->andFilterWhere(['like', 'staff', $this->staff]);
+            ->andFilterWhere(['like', 'staff', $this->staff])
+            ->andFilterWhere(['like', 'sex', $this->sex])
+            ->andFilterWhere(['like', 'addre', $this->addre])
+            ->andFilterWhere(['like', 'death_out_place', $this->death_out_place])
+            ->andFilterWhere(['like', 'send_by_id', $this->send_by_id])
+            ->andFilterWhere(['like', 'cpr', $this->cpr])
+            ->andFilterWhere(['like', 'ward', $this->ward])
+            ->andFilterWhere(['like', 'symptoms_refer', $this->symptoms_refer])
+            ->andFilterWhere(['like', 'death_af48hr', $this->death_af48hr])
+            ->andFilterWhere(['like', 'case_refer', $this->case_refer]);
 
         return $dataProvider;
     }

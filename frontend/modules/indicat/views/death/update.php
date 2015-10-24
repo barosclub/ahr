@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model frontend\modules\indicat\models\Death */
+/* @var $model common\models\death */
 
 $this->title = 'Update Death: ' . ' ' . $model->death_id;
 $this->params['breadcrumbs'][] = ['label' => 'Deaths', 'url' => ['index']];
