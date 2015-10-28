@@ -21,10 +21,7 @@ class AdminLteAsset extends AssetBundle {
         'dist/css/skins/_all-skins.min.css',
         //'plugins/datepicker/datepicker3.css',
         'plugins/iCheck/square/blue.css',
-       //'plugins/daterangepicker/daterangepicker-bs3.css',
-       // 'plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
-        //'plugins/jvectormap/jquery-jvectormap-1.2.2.css',
-        
+      
         
     ];
     public $js = [
@@ -32,8 +29,8 @@ class AdminLteAsset extends AssetBundle {
         //'dist/js/raphael-min.js',
       // 'plugins/datatables/jquery.dataTables.min.js',
        // 'plugins/datatables/dataTables.bootstrap.js',
-        'bootstrap/js/bootstrap.min.js',
-       // 'plugins/fastclick/fastclick.min.js',
+      //  'bootstrap/js/bootstrap.min.js',
+       //'script/script.js',
         
         
        //'plugins/sparkline/jquery.sparkline.min.js',

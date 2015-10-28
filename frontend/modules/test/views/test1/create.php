@@ -4,19 +4,18 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model frontend\modules\indicat\models\Death */
+/* @var $model common\models\MEmp */
 
-$this->title = 'Create Death';
-$this->params['breadcrumbs'][] = ['label' => 'Deaths', 'url' => ['index']];
+$this->title = 'Create Memp';
+$this->params['breadcrumbs'][] = ['label' => 'Memps', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="death-create">
+<div class="memp-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,
-        'hosxp'=> $hosxp,
     ]) ?>
 
 </div>

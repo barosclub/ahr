@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel frontend\modules\indicat\models\DeathSearch */
+/* @var $searchModel frontend\modules\test\models\MEmpSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Deaths';
+$this->title = 'Memps';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="death-index">
+<div class="memp-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Death', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Memp', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -25,21 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'death_id',
-            'hn',
-            'age',
-            'sex',
-            'addre',
-            // 'death_out_place',
-            // 'send_by_id',
-            // 'cpr',
-            // 'ward',
-            // 'symptoms_refer',
-            // 'death_af48hr',
-            // 'case_refer',
+            'id',
+            'title',
+            'name',
+            'surname',
+            'user_id',
 
             ['class' => 'yii\grid\ActionColumn'],
-            
         ],
     ]); ?>
 

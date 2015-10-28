@@ -4,108 +4,12 @@ namespace common\models;
 
 use Yii;
 
-/**
- * This is the model class for table "patient".
- *
- * @property string $hos_guid
- * @property string $hn
- * @property string $pname
- * @property string $fname
- * @property string $lname
- * @property string $occupation
- * @property string $citizenship
- * @property string $birthday
- * @property string $addrpart
- * @property string $moopart
- * @property string $tmbpart
- * @property string $amppart
- * @property string $chwpart
- * @property string $bloodgrp
- * @property string $clinic
- * @property string $deathday
- * @property string $drugallergy
- * @property integer $familyno
- * @property string $fathername
- * @property string $firstday
- * @property string $hometel
- * @property string $informaddr
- * @property string $informname
- * @property string $informrelation
- * @property string $informtel
- * @property string $marrystatus
- * @property string $mathername
- * @property integer $hn_int
- * @property string $nationality
- * @property string $opdlocation
- * @property string $pttype
- * @property string $religion
- * @property string $sex
- * @property string $spsname
- * @property string $truebirthday
- * @property string $workaddr
- * @property string $worktel
- * @property string $hcode
- * @property string $cid
- * @property integer $hid
- * @property string $educate
- * @property string $family_status
- * @property string $labor_type
- * @property string $last_update
- * @property string $type_area
- * @property string $road
- * @property string $father_cid
- * @property string $mother_cid
- * @property string $couple_cid
- * @property string $person_type
- * @property string $private_doctor_name
- * @property string $legal_action
- * @property string $death_code504
- * @property string $death_diag
- * @property string $node_id
- * @property string $admit
- * @property string $midname
- * @property string $po_code
- * @property string $fatherlname
- * @property string $motherlname
- * @property string $spslname
- * @property string $country
- * @property string $email
- * @property string $birthtime
- * @property string $mother_hn
- * @property string $last_visit
- * @property string $death
- * @property integer $height
- * @property string $inregion
- * @property string $reg_time
- * @property string $oldcode
- * @property string $lang
- * @property string $gov_chronic_id
- * @property string $in_cups
- * @property integer $patient_type_id
- * @property string $addr_soi
- * @property string $work_addr
- * @property string $father_hn
- * @property string $alias_name
- * @property string $destroyed
- * @property string $old_addr
- * @property string $fname_soundex
- * @property string $lname_soundex
- * @property string $bloodgroup_rh
- * @property string $passport_no
- * @property string $addressid
- * @property string $mobile_phone_number
- * @property string $anonymous_person
- * @property string $ec_fname
- * @property string $ec_lname
- * @property integer $hospital_department_id
- * @property string $membercard_no
- * @property integer $ec_relation_type_id
- */
+
+
 class Patient extends \yii\db\ActiveRecord
 {
-    /**
-     * @inheritdoc
-     */
+   
+     
     public static function tableName()
     {
         return 'patient';

@@ -26,10 +26,18 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'death_id',
-            'hn',
-            'age',
-            'sex',
-            'addre',
+            'hn','cid',
+            [
+              'header'=>'ptname',
+                'value'=>'patients.fname',
+            ],
+             [
+              'header'=>'ptname',
+                'value'=>'patients.lname',
+            ],
+           
+          
+         
             // 'death_out_place',
             // 'send_by_id',
             // 'cpr',

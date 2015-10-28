@@ -15,6 +15,9 @@ return [
         'indicat' => [
             'class' => 'frontend\modules\indicat\Module',
         ],
+           'test' => [
+            'class' => 'frontend\modules\test\Module',
+        ],
     ],
     'components' => [
         'user' => [
